@@ -28,8 +28,8 @@ function LeafletMap() {
     <div className="basis-3/4">
       <MapContainer center={center} zoom={13} className="h-full ">
         <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.fr/hot/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution="© OpenStreetMap contributors"
         />
         {listingData.map((listing) => (
           <Marker
