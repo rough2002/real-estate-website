@@ -25,7 +25,7 @@ function Home() {
             </button>
           </div>
           <img
-            src="../../public/Canada-Nova-Scotia.jpg"
+            src="Canada-Nova-Scotia.jpg"
             className=" h-[500px] w-[600px] bg-green-500 basis-1/2 rounded-xl "
           ></img>
         </div>
