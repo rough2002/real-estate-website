@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"; */
+@layer components {
+  .link {
+    @apply hover:bg-violet-800 hover:text-white text-violet-900 font-semibold h-10 w-20 flex items-center justify-center rounded-md transition-all duration-300 ease-in-out;
+  }
+  .active {
+    @apply text-white bg-violet-800;
+  }
+  .center {
+    @apply flex items-center justify-center;
+  }
+  .input-focus {
+    @apply focus:border-b-[4px] focus:border-violet-500;
+  }
+  .footer-heading {
+    @apply font-bold mb-3 text-lg;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey; /* Color of the thumb */
+  border-radius: 6px;
+  border: 1px solid grey; /* Color of the border */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6b778c; /* thumb and track colors */
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: white;
+  color: #7e22ce;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leaflet-popup .leaflet-popup-content span:first-child {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: white;
+}
