@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between pl-32 pr-20 row-start-1 row-span-1 bg-white w-full">
+    <nav className="flex items-center justify-between pl-32 pr-20 row-start-1 row-span-1 h-[80px] bg-white w-full fixed z-30">
       <Logo />
       <ul className="flex space-x-4">
         <li>
