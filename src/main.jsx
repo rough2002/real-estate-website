@@ -10,7 +10,10 @@ import SignIn from "./pages/SignIn.jsx";
 import Listing from "./pages/Listing.jsx";
 import Selling from "./pages/Selling.jsx";
 import Buying from "./pages/Buying.jsx";
-
+import Mortgage from "./pages/Mortgage.jsx";
+import Buisness from "./pages/Buisness.jsx";
+import Marketing from "./pages/Marketing.jsx";
+import Insurance from "./pages/Insurance.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +43,22 @@ const router = createBrowserRouter([
       {
         path: "selling",
         element: <Selling />,
+      },
+      {
+        path: "mortgage",
+        element: <Mortgage />,
+      },
+      {
+        path: "buisness",
+        element: <Buisness />,
+      },
+      {
+        path: "marketing",
+        element: <Marketing />,
+      },
+      {
+        path: "insurance",
+        element: <Insurance />,
       },
     ],
   },

@@ -1,16 +1,22 @@
 import AgentCard from "../components/AgentCard";
 import { v4 as uuidv4 } from "uuid";
 import { agentData } from "../../data/agentData";
-import Footer from "../components/Footer";
+import Button from "../components/Button";
+import ImageCard from "../components/ImageCard";
+import { agentsImageCard } from "../content/agents.content";
+
 const imgStr = "https://i.pravatar.cc/250?";
 function Agents() {
   return (
-    <div className="flex flex-col">
-      <main className="bg-slate-100 min-h-screen px-20 pt-10 space-y-10 flex flex-col items-center">
-        <h1 className="text-violet-800 font-bold text-[45px] mb-7 font-sans custom-heading border-b-[3px] border-violet-800">
-          Meet our Expert Agents.
-        </h1>
-        <div className="grid grid-cols-4 gap-10 grid-rows-auto">
+    <div className="flex flex-col  text-violet-800 items-center space-y-8 ">
+      <ImageCard content={agentsImageCard}>
+        <div className="space-x-8">
+          <Button>LOOKING TO BUY ?</Button>
+          <Button>LOOKING TO SELL ?</Button>
+        </div>
+      </ImageCard>
+      <div className="px-32">
+        <div className="grid grid-cols-5 gap-6 grid-rows-auto py-14">
           {agentData.map((agent) => (
             <AgentCard
               key={agent.id}
@@ -21,8 +27,7 @@ function Agents() {
             />
           ))}
         </div>
-      </main>
-      <Footer />
+      </div>
     </div>
   );
 }

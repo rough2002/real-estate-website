@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between pl-32 pr-20 row-start-1 row-span-1 bg-white">
+    <nav className="flex items-center justify-between pl-32 pr-20 row-start-1 row-span-1 bg-white w-full">
       <Logo />
       <ul className="flex space-x-4">
         <li>
@@ -45,12 +45,52 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            to={`buisness`}
+            className={({ isActive }) =>
+              ` ${isActive ? "active link" : "link"}`
+            }
+          >
+            Buisness
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to={`listings`}
             className={({ isActive }) =>
               ` ${isActive ? "active link" : "link"}`
             }
           >
             Map
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={`mortgage`}
+            className={({ isActive }) =>
+              ` ${isActive ? "active link" : "link"}`
+            }
+          >
+            Mortgage
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={`insurance`}
+            className={({ isActive }) =>
+              ` ${isActive ? "active link" : "link"}`
+            }
+          >
+            Insurance
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={`marketing`}
+            className={({ isActive }) =>
+              ` ${isActive ? "active link" : "link"}`
+            }
+          >
+            Marketing
           </NavLink>
         </li>
         <li>

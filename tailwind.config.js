@@ -6,6 +6,9 @@ export default {
       fontSize: {
         "10xl": "12rem", // Customize as needed
       },
+      backgroundImage: {
+        ns: "url('../public/Canada-Nova-Scotia.png')",
+      },
     },
     plugins: [],
   },
